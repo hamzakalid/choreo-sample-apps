@@ -124,4 +124,39 @@ components:
       type: array
       items:
         type: string
-  
+  /care:
+    summary: care api
+    get:
+      summary: care
+      operationId: cerae
+      responses:
+        '200':
+          description: creatre
+
+components:
+  schemas:
+    Key:
+      type: object
+      properties:
+        key:
+          type: string
+          example: 'my-key'
+    KeyValue:
+      type: object
+      required:
+        - key
+        - value
+      properties:
+        key: 
+          type: string
+          example: 'my-key'
+        value:
+          type: string
+          example: 'my-value'
+        ttl:
+          type: integer
+          example: 30
+    StringArray:
+      type: array
+      items:
+        type: string
