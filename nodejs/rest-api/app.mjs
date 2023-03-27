@@ -45,6 +45,9 @@ app.delete("/api/keys/:key", (req, res) => {
 app.get("/healthz", (_, res) => {
   return res.sendStatus(200);
 });
+app.get("/care", (_, res) => {
+  return res.sendStatus(200).json({ "care": true});
+});
 
 app.use((err, _req, res, next) => {
   if (res.headersSent) {
