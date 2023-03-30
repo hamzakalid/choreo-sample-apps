@@ -96,6 +96,14 @@ paths:
       responses:
         '200':
           description: Healthy response
+  /care:
+    summary: care api
+    get:
+      summary: Carecheck
+      operationId: Carecheck
+      responses:
+        '200':
+          description: Care Response
 components:
   schemas:
     Key:
