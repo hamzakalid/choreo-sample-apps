@@ -96,14 +96,6 @@ paths:
       responses:
         '200':
           description: Healthy response
- /care:
-    summary: care api
-    get:
-      summary: care
-      operationId: cerae
-      responses:
-        '200':
-          description: creatre
 components:
   schemas:
     Key:
